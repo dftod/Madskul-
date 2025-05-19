@@ -19,9 +19,9 @@ void onReady() {
   Future.delayed(const Duration(seconds: 3), () {
     final status = getStorage.read("status");
     if (status != null && status != "") {
-      Get.offAllNamed(Routes.HOME);
+      Get.offAllNamed(Routes.HOMEPAGE);
     } else {
-      Get.offAllNamed(Routes.LOGIN);
+      Get.offAllNamed(Routes.WELCOME);
     }
   });
 }
